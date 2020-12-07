@@ -1,0 +1,178 @@
+﻿<Window x:Class="Olympics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPack="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Olympics"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="650" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="#40739e">
+                <Image Source="../Images/olympics.png"/>
+            </Grid>
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Style="{DynamicResource MaterialDesignScrollViewer}">
+                <StackPanel Grid.Row="1" Background="#130f40">
+                    <Expander x:Name="AddExpander" Background="#192a56" Foreground="WhiteSmoke" BorderBrush="#130f40" BorderThickness="5">
+                        <Expander.Header>
+                            <Label HorizontalAlignment="Center" Content="Add" FontSize="18" FontFamily="Cooper Std Black" Foreground="White"/>
+                        </Expander.Header>
+                        <StackPanel>
+                            <Button x:Name="addCountryMenuBtn" Click="MenuButtonClicked" Background="#273c75" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="AddLocation" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Country" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="addSportMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="AddBox" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Sport" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="addSportmanMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="PersonAdd" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Sportman" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="fillParticipantMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="FitnessCenter" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="Fill Participant" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="giveMedalMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="Medal" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="Give Medal" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="addParticipantMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="AddThick" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Participant" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="addEventMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="AddAlert" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Event" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="addOlympiadMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="StadiumVariant" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="10,0" Content="New Olympiad" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander x:Name="EditExpander" Background="#192a56" Foreground="WhiteSmoke" BorderBrush="#130f40" BorderThickness="5">
+                        <Expander.Header>
+                            <Label HorizontalAlignment="Center" Content="Show" FontSize="18" FontFamily="Cooper Std Black" Foreground="White"/>
+                        </Expander.Header>
+                        <StackPanel>
+                            <Button x:Name="allMedalsMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="Medal" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="All Medals" FontSize="16" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="winnersBySportsMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="People" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="Winners by sports" FontSize="14" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="countryWithMostMedalsMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="Table" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="Medals for Country" FontSize="14" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="mostWinnerForSportMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="HumanHandsup" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="Most winner for sport" FontSize="13" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="mostHostingCountryMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left" Command="{Binding MostHostingCountryCommand}">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="Home" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="Most hosting Country" FontSize="13" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="countryStatisticsMenuBtn" Background="#273c75" Click="MenuButtonClicked" BorderThickness="0" Height="40" HorizontalContentAlignment="Left">
+                                <Button.Content>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon Margin="5,0" Kind="GraphOutline" Width="30" Height="30" Foreground="WhiteSmoke" VerticalAlignment="Center"/>
+                                        <Label Margin="5,0" Content="Country statistics" FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Name="menuBar" Background="#dfe6e9" MouseDown="menuBar_MouseDown">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="windowMinimizeBtn" Content="🗕" Margin="2,0" FontSize="13" FontWeight="Heavy" Foreground="Black" Height="35" Width="45" Background="#a4b0be" BorderThickness="0" Click="windowMinimizeBtn_Click"/>
+                    <Button x:Name="windowMaximizeBtn" Content="🗖" FontSize="13" FontWeight="Heavy" Foreground="Black" Height="35" Width="45" Background="#a4b0be" BorderThickness="0" Click="windowMaximizeBtn_Click"/>
+                    <Button x:Name="windowCloseBtn"    Content="X"  Margin="2,0,0,0" FontSize="13" FontWeight="Heavy" Foreground="Black" Height="35" Width="45" Background="#a4b0be" BorderThickness="0" Click="windowCloseBtn_Click"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Name="displayGrid" Background="#353b48"/>
+        </Grid>
+    </Grid>
+</Window>

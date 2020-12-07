@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olympics", "Olympics\Olympics.csproj", "{590880D3-22CA-4E09-933F-1F6A02EBEB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{253B88E9-A26F-4B0A-8310-935B1B8B493F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseModel", "DatabaseModel\DatabaseModel.csproj", "{88FF1F4F-F8D1-41F5-AFC3-A4E6ACA08D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{590880D3-22CA-4E09-933F-1F6A02EBEB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590880D3-22CA-4E09-933F-1F6A02EBEB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590880D3-22CA-4E09-933F-1F6A02EBEB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590880D3-22CA-4E09-933F-1F6A02EBEB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253B88E9-A26F-4B0A-8310-935B1B8B493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253B88E9-A26F-4B0A-8310-935B1B8B493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253B88E9-A26F-4B0A-8310-935B1B8B493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253B88E9-A26F-4B0A-8310-935B1B8B493F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FF1F4F-F8D1-41F5-AFC3-A4E6ACA08D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FF1F4F-F8D1-41F5-AFC3-A4E6ACA08D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FF1F4F-F8D1-41F5-AFC3-A4E6ACA08D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FF1F4F-F8D1-41F5-AFC3-A4E6ACA08D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCF54317-6FA3-4209-A23B-B1C5C3500FD1}
+	EndGlobalSection
+EndGlobal
